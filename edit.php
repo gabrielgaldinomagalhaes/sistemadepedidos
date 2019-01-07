@@ -52,7 +52,7 @@ endif; ?>
 
 		if($item['id'] == $order_item['id_produto']){?>
 		
-			<div class="card my-3">
+			<div class="card my-3 shadow">
 			<img class="card-img-top" src="<?php echo BASEURL; ?><?php echo $order_item['end_imagem'];  ?>">
 			<div class="card-body">
 				<h5 class="card-title"><?php echo $order_item['nome'];  ?><br><small class="text-muted">ID - <?php echo $order_item['id'];  ?></small> </h5>
@@ -120,7 +120,7 @@ endif; ?>
 		endforeach;
 		
 		if ($entered == false){?>
-		<div class="card my-3">
+		<div class="card my-3 shadow">
 			<img class="card-img-top" src="<?php echo BASEURL; ?><?php echo $item['end_imagem'];  ?>">
 			<div class="card-body">
 				<h5 class="card-title"><?php echo $item['nome'];  ?><br><small class="text-muted">ID - <?php echo $item['id'];  ?></small> </h5>
