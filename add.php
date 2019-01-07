@@ -45,7 +45,7 @@
 	<div class="card-deck">
 
 		<?php foreach ($items as $item) : ?>
-		<div class="card my-3">
+		<div class="card my-3 shadow">
 			<img class="card-img-top" src="<?php echo BASEURL; ?><?php echo $item['end_imagem'];  ?>">
 			<div class="card-body">
 				<h5 class="card-title"><?php echo $item['nome'];  ?><br><small class="text-muted">ID - <?php echo $item['id'];  ?></small> </h5>
