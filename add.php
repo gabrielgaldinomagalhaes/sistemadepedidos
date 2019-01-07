@@ -33,11 +33,6 @@
 			<?php endif; ?>
 		</select>
 	</div>
-
-	<div class="form-group col-md-4">
-		<label for="pedido"><strong>N° PEDIDO</strong></label>
-		<input type="text" class="form-control text-right" style="font-weight: bold;" name="num-order" id="num-order" value="" readonly>
-	</div>
 </div>
 
 <h4><small><i class="fa fa-plus"></i></small> Adicionar Produtos</h4>
