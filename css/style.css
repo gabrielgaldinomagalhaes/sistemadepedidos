@@ -1,0 +1,64 @@
+@media (min-width: 0) {
+	.card-deck .card {
+		flex: 0 0 calc(100% - 30px);
+	}
+}
+@media (min-width: 576px) {
+	.card-deck .card {
+		flex: 0 0 calc(100% - 30px);
+	}
+}
+@media (min-width: 768px) {
+	.card-deck .card {
+		flex: 0 0 calc(100% - 30px);
+	}
+}
+@media (min-width: 992px) {
+	.card-deck .card {
+		flex: 0 0 calc(50% - 30px);
+	}
+}
+@media (min-width: 1200px) {
+	.card-deck .card {
+		flex: 0 0 calc(33.3333333333% - 30px);
+	}
+}
+
+.price{
+	width: 180px !important;
+	padding-right: 10px;
+}
+
+.amount{
+	width: 60px !important;
+	padding-right: 10px;
+}
+
+.back-grey{
+	background-color: #dddddd !important;
+}
+
+.rentability.bad{
+	background-color: red !important;
+}
+
+.rentability.good{
+	background-color: yellow !important;
+}
+.rentability.great{
+	background-color: limegreen!important;
+}
+
+.amount-total{
+	font-size: 20px !important;
+}
+
+.close-modal {
+	z-index: 1 !important;
+	position: absolute;
+	right: 10px;
+}
+.hidden{
+	display:none;
+	visibility: hidden;
+}
