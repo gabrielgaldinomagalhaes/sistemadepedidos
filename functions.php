@@ -31,7 +31,6 @@
 		if (!empty($_POST['salvar'])) {
 			$consumer_id = $_POST['id-consumer'];
 			$valor_pedido = $_POST['order-total-hidden'];
-			$order_id = $_POST['num-order'];
 
 			$valor_pedido = str_replace("R$", "", "$valor_pedido");
 			$valor_pedido = str_replace(".", "", "$valor_pedido");
@@ -46,7 +45,11 @@
 			$novaString = implode(".", $array);
 
 			$save = save('pedidos', $consumer_id,$novaString);
-			remove_item($order_id);
+			$last = find_last_id();
+			
+			echo "<script type='textr/javascript'>alert('.$last.');</script>";
+			remove_item($last);
+			
 			$items_quant = $_POST['num-itens'];
 
 			for($x = 1; $x <= $items_quant; $x++){
@@ -70,12 +73,12 @@
 					$array_total = str_split($item_total, $tam_total);
 					$nova_total = implode(".", $array_total);
 
-					$save_item = save_item($order_id,$item_id,$item_amount,$item_price,$item_rentab,$nova_total);
+					$save_item = save_item($last,$item_id,$item_amount,$item_price,$item_rentab,$nova_total);
 				}
 
 			}	  
 			if($save==1 && $save_item==1){
-				header('location: view.php?id='.preg_replace("/[^0-9]/", "", $order_id).'&success=1');
+				header('location: view.php?id='.preg_replace("/[^0-9]/", "", $last).'&success=1');
 			}else{
 				header('location: index.php?id=-1');
 			}

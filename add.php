@@ -36,7 +36,7 @@
 
 	<div class="form-group col-md-4">
 		<label for="pedido"><strong>N° PEDIDO</strong></label>
-		<input type="text" class="form-control text-right" style="font-weight: bold;" name="num-order" id="num-order" value="<?php echo $new_id; ?> " readonly>
+		<input type="text" class="form-control text-right" style="font-weight: bold;" name="num-order" id="num-order" value="" readonly>
 	</div>
 </div>
 
